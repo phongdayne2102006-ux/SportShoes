@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Hoàn tất đơn hàng giày thể thao tại SportShoes." />
+    <title>Thanh toán — SportShoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/products.js"></script>
+  </head>
+  <body>
+    <div data-site-header></div>
+    <main class="wrap page-main">
+      <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="index.html">Trang chủ</a><span>/</span><a href="cart.html">Giỏ hàng</a><span>/</span><span>Thanh toán</span></nav>
+      <div class="section-heading"><div><p class="eyebrow">CHỈ CÒN MỘT BƯỚC</p><h1>Thông tin giao hàng</h1></div></div>
+      <div class="checkout-layout">
+        <form class="checkout-form" data-checkout-form>
+          <p class="form-intro">Điền thông tin để chúng tôi giao đôi giày mới đến bạn.</p>
+          <label>Họ và tên<input name="name" autocomplete="name" maxlength="120" required /></label>
+          <label>Email<input name="email" type="email" autocomplete="email" maxlength="254" required /></label>
+          <label>Số điện thoại<input name="phone" type="tel" autocomplete="tel" maxlength="30" required /></label>
+          <label>Địa chỉ nhận hàng<textarea name="address" autocomplete="street-address" maxlength="300" rows="3" required></textarea></label>
+          <p class="form-note">Bản dùng thử lưu đơn trên thiết bị này; chưa gửi thông tin đến cửa hàng.</p>
+          <p class="form-message" data-checkout-message role="status" aria-live="polite"></p>
+          <button class="button button--dark button--full" type="submit">Đặt hàng <span aria-hidden="true">→</span></button>
+        </form>
+        <aside class="checkout-summary" data-checkout-summary></aside>
+      </div>
+    </main>
+    <div data-site-footer></div>
+  </body>
+</html>
